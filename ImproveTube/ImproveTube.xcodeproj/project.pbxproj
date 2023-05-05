@@ -1,0 +1,992 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCC19B142A04A03E00C32097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC19B132A04A03E00C32097 /* AppDelegate.swift */; };
+		DCC19B162A04A03E00C32097 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC19B152A04A03E00C32097 /* SceneDelegate.swift */; };
+		DCC19B192A04A03E00C32097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B172A04A03E00C32097 /* LaunchScreen.storyboard */; };
+		DCC19B1C2A04A03E00C32097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B1A2A04A03E00C32097 /* Main.storyboard */; };
+		DCC19B252A04A03E00C32097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC19B242A04A03E00C32097 /* AppDelegate.swift */; };
+		DCC19B282A04A03E00C32097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B262A04A03E00C32097 /* Main.storyboard */; };
+		DCC19B302A04A03E00C32097 /* ImproveTube Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DCC19B2F2A04A03E00C32097 /* ImproveTube Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DCC19B3A2A04A03E00C32097 /* ImproveTube Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DCC19B392A04A03E00C32097 /* ImproveTube Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DCC19B402A04A03E00C32097 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B032A04A03D00C32097 /* Main.html */; };
+		DCC19B412A04A03E00C32097 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B032A04A03D00C32097 /* Main.html */; };
+		DCC19B422A04A03E00C32097 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B052A04A03D00C32097 /* Icon.png */; };
+		DCC19B432A04A03E00C32097 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B052A04A03D00C32097 /* Icon.png */; };
+		DCC19B442A04A03E00C32097 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B062A04A03D00C32097 /* Style.css */; };
+		DCC19B452A04A03E00C32097 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B062A04A03D00C32097 /* Style.css */; };
+		DCC19B462A04A03E00C32097 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B072A04A03D00C32097 /* Script.js */; };
+		DCC19B472A04A03E00C32097 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B072A04A03D00C32097 /* Script.js */; };
+		DCC19B482A04A03E00C32097 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC19B082A04A03D00C32097 /* ViewController.swift */; };
+		DCC19B492A04A03E00C32097 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC19B082A04A03D00C32097 /* ViewController.swift */; };
+		DCC19B4A2A04A03E00C32097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B092A04A03E00C32097 /* Assets.xcassets */; };
+		DCC19B4B2A04A03E00C32097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B092A04A03E00C32097 /* Assets.xcassets */; };
+		DCC19B4C2A04A03E00C32097 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC19B0B2A04A03E00C32097 /* SafariWebExtensionHandler.swift */; };
+		DCC19B4D2A04A03E00C32097 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC19B0B2A04A03E00C32097 /* SafariWebExtensionHandler.swift */; };
+		DCC19B6A2A04A03F00C32097 /* py in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B5F2A04A03F00C32097 /* py */; };
+		DCC19B6B2A04A03F00C32097 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B602A04A03F00C32097 /* LICENSE */; };
+		DCC19B6C2A04A03F00C32097 /* ImproveTube in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B612A04A03F00C32097 /* ImproveTube */; };
+		DCC19B6D2A04A03F00C32097 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B622A04A03F00C32097 /* background.js */; };
+		DCC19B6E2A04A03F00C32097 /* manifest3.json in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B632A04A03F00C32097 /* manifest3.json */; };
+		DCC19B6F2A04A03F00C32097 /* stuff in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B642A04A03F00C32097 /* stuff */; };
+		DCC19B702A04A03F00C32097 /* CONTRIBUTING.md in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B652A04A03F00C32097 /* CONTRIBUTING.md */; };
+		DCC19B712A04A03F00C32097 /* menu in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B662A04A03F00C32097 /* menu */; };
+		DCC19B722A04A03F00C32097 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B672A04A03F00C32097 /* manifest.json */; };
+		DCC19B732A04A03F00C32097 /* js&css in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B682A04A03F00C32097 /* js&css */; };
+		DCC19B742A04A03F00C32097 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B692A04A03F00C32097 /* _locales */; };
+		DCC19B752A04A03F00C32097 /* py in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B5F2A04A03F00C32097 /* py */; };
+		DCC19B762A04A03F00C32097 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B602A04A03F00C32097 /* LICENSE */; };
+		DCC19B772A04A03F00C32097 /* ImproveTube in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B612A04A03F00C32097 /* ImproveTube */; };
+		DCC19B782A04A03F00C32097 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B622A04A03F00C32097 /* background.js */; };
+		DCC19B792A04A03F00C32097 /* manifest3.json in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B632A04A03F00C32097 /* manifest3.json */; };
+		DCC19B7A2A04A03F00C32097 /* stuff in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B642A04A03F00C32097 /* stuff */; };
+		DCC19B7B2A04A03F00C32097 /* CONTRIBUTING.md in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B652A04A03F00C32097 /* CONTRIBUTING.md */; };
+		DCC19B7C2A04A03F00C32097 /* menu in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B662A04A03F00C32097 /* menu */; };
+		DCC19B7D2A04A03F00C32097 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B672A04A03F00C32097 /* manifest.json */; };
+		DCC19B7E2A04A03F00C32097 /* js&css in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B682A04A03F00C32097 /* js&css */; };
+		DCC19B7F2A04A03F00C32097 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = DCC19B692A04A03F00C32097 /* _locales */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCC19B312A04A03E00C32097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCC19AFD2A04A03D00C32097 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCC19B2E2A04A03E00C32097;
+			remoteInfo = "ImproveTube Extension (iOS)";
+		};
+		DCC19B3B2A04A03E00C32097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCC19AFD2A04A03D00C32097 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCC19B382A04A03E00C32097;
+			remoteInfo = "ImproveTube Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCC19B532A04A03E00C32097 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DCC19B302A04A03E00C32097 /* ImproveTube Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC19B5A2A04A03E00C32097 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DCC19B3A2A04A03E00C32097 /* ImproveTube Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DCC19B042A04A03D00C32097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		DCC19B052A04A03D00C32097 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		DCC19B062A04A03D00C32097 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		DCC19B072A04A03D00C32097 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		DCC19B082A04A03D00C32097 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCC19B092A04A03E00C32097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCC19B0B2A04A03E00C32097 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		DCC19B102A04A03E00C32097 /* ImproveTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImproveTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC19B132A04A03E00C32097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCC19B152A04A03E00C32097 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DCC19B182A04A03E00C32097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCC19B1B2A04A03E00C32097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCC19B1D2A04A03E00C32097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC19B222A04A03E00C32097 /* ImproveTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImproveTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC19B242A04A03E00C32097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCC19B272A04A03E00C32097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCC19B292A04A03E00C32097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC19B2A2A04A03E00C32097 /* ImproveTube.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImproveTube.entitlements; sourceTree = "<group>"; };
+		DCC19B2F2A04A03E00C32097 /* ImproveTube Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ImproveTube Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC19B342A04A03E00C32097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC19B392A04A03E00C32097 /* ImproveTube Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ImproveTube Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC19B3E2A04A03E00C32097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC19B3F2A04A03E00C32097 /* ImproveTube.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImproveTube.entitlements; sourceTree = "<group>"; };
+		DCC19B5F2A04A03F00C32097 /* py */ = {isa = PBXFileReference; lastKnownFileType = folder; name = py; path = ../../py; sourceTree = "<group>"; };
+		DCC19B602A04A03F00C32097 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
+		DCC19B612A04A03F00C32097 /* ImproveTube */ = {isa = PBXFileReference; lastKnownFileType = text; path = ImproveTube; sourceTree = SOURCE_ROOT; };
+		DCC19B622A04A03F00C32097 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../background.js; sourceTree = "<group>"; };
+		DCC19B632A04A03F00C32097 /* manifest3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest3.json; path = ../../manifest3.json; sourceTree = "<group>"; };
+		DCC19B642A04A03F00C32097 /* stuff */ = {isa = PBXFileReference; lastKnownFileType = folder; name = stuff; path = ../../stuff; sourceTree = "<group>"; };
+		DCC19B652A04A03F00C32097 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CONTRIBUTING.md; path = ../../CONTRIBUTING.md; sourceTree = "<group>"; };
+		DCC19B662A04A03F00C32097 /* menu */ = {isa = PBXFileReference; lastKnownFileType = folder; name = menu; path = ../../menu; sourceTree = "<group>"; };
+		DCC19B672A04A03F00C32097 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../manifest.json; sourceTree = "<group>"; };
+		DCC19B682A04A03F00C32097 /* js&css */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "js&css"; path = "../../js&css"; sourceTree = "<group>"; };
+		DCC19B692A04A03F00C32097 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = ../../_locales; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCC19B0D2A04A03E00C32097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC19B1F2A04A03E00C32097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC19B2C2A04A03E00C32097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC19B362A04A03E00C32097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCC19AFC2A04A03D00C32097 = {
+			isa = PBXGroup;
+			children = (
+				DCC19B012A04A03D00C32097 /* Shared (App) */,
+				DCC19B0A2A04A03E00C32097 /* Shared (Extension) */,
+				DCC19B122A04A03E00C32097 /* iOS (App) */,
+				DCC19B232A04A03E00C32097 /* macOS (App) */,
+				DCC19B332A04A03E00C32097 /* iOS (Extension) */,
+				DCC19B3D2A04A03E00C32097 /* macOS (Extension) */,
+				DCC19B112A04A03E00C32097 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCC19B012A04A03D00C32097 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				DCC19B082A04A03D00C32097 /* ViewController.swift */,
+				DCC19B092A04A03E00C32097 /* Assets.xcassets */,
+				DCC19B022A04A03D00C32097 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		DCC19B022A04A03D00C32097 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DCC19B032A04A03D00C32097 /* Main.html */,
+				DCC19B052A04A03D00C32097 /* Icon.png */,
+				DCC19B062A04A03D00C32097 /* Style.css */,
+				DCC19B072A04A03D00C32097 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DCC19B0A2A04A03E00C32097 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				DCC19B5E2A04A03F00C32097 /* Resources */,
+				DCC19B0B2A04A03E00C32097 /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		DCC19B112A04A03E00C32097 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCC19B102A04A03E00C32097 /* ImproveTube.app */,
+				DCC19B222A04A03E00C32097 /* ImproveTube.app */,
+				DCC19B2F2A04A03E00C32097 /* ImproveTube Extension.appex */,
+				DCC19B392A04A03E00C32097 /* ImproveTube Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCC19B122A04A03E00C32097 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				DCC19B132A04A03E00C32097 /* AppDelegate.swift */,
+				DCC19B152A04A03E00C32097 /* SceneDelegate.swift */,
+				DCC19B172A04A03E00C32097 /* LaunchScreen.storyboard */,
+				DCC19B1A2A04A03E00C32097 /* Main.storyboard */,
+				DCC19B1D2A04A03E00C32097 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		DCC19B232A04A03E00C32097 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				DCC19B242A04A03E00C32097 /* AppDelegate.swift */,
+				DCC19B262A04A03E00C32097 /* Main.storyboard */,
+				DCC19B292A04A03E00C32097 /* Info.plist */,
+				DCC19B2A2A04A03E00C32097 /* ImproveTube.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		DCC19B332A04A03E00C32097 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				DCC19B342A04A03E00C32097 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		DCC19B3D2A04A03E00C32097 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				DCC19B3E2A04A03E00C32097 /* Info.plist */,
+				DCC19B3F2A04A03E00C32097 /* ImproveTube.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		DCC19B5E2A04A03F00C32097 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DCC19B5F2A04A03F00C32097 /* py */,
+				DCC19B602A04A03F00C32097 /* LICENSE */,
+				DCC19B612A04A03F00C32097 /* ImproveTube */,
+				DCC19B622A04A03F00C32097 /* background.js */,
+				DCC19B632A04A03F00C32097 /* manifest3.json */,
+				DCC19B642A04A03F00C32097 /* stuff */,
+				DCC19B652A04A03F00C32097 /* CONTRIBUTING.md */,
+				DCC19B662A04A03F00C32097 /* menu */,
+				DCC19B672A04A03F00C32097 /* manifest.json */,
+				DCC19B682A04A03F00C32097 /* js&css */,
+				DCC19B692A04A03F00C32097 /* _locales */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCC19B0F2A04A03E00C32097 /* ImproveTube (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCC19B542A04A03E00C32097 /* Build configuration list for PBXNativeTarget "ImproveTube (iOS)" */;
+			buildPhases = (
+				DCC19B0C2A04A03E00C32097 /* Sources */,
+				DCC19B0D2A04A03E00C32097 /* Frameworks */,
+				DCC19B0E2A04A03E00C32097 /* Resources */,
+				DCC19B532A04A03E00C32097 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCC19B322A04A03E00C32097 /* PBXTargetDependency */,
+			);
+			name = "ImproveTube (iOS)";
+			productName = "ImproveTube (iOS)";
+			productReference = DCC19B102A04A03E00C32097 /* ImproveTube.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCC19B212A04A03E00C32097 /* ImproveTube (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCC19B5B2A04A03E00C32097 /* Build configuration list for PBXNativeTarget "ImproveTube (macOS)" */;
+			buildPhases = (
+				DCC19B1E2A04A03E00C32097 /* Sources */,
+				DCC19B1F2A04A03E00C32097 /* Frameworks */,
+				DCC19B202A04A03E00C32097 /* Resources */,
+				DCC19B5A2A04A03E00C32097 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCC19B3C2A04A03E00C32097 /* PBXTargetDependency */,
+			);
+			name = "ImproveTube (macOS)";
+			productName = "ImproveTube (macOS)";
+			productReference = DCC19B222A04A03E00C32097 /* ImproveTube.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCC19B2E2A04A03E00C32097 /* ImproveTube Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCC19B502A04A03E00C32097 /* Build configuration list for PBXNativeTarget "ImproveTube Extension (iOS)" */;
+			buildPhases = (
+				DCC19B2B2A04A03E00C32097 /* Sources */,
+				DCC19B2C2A04A03E00C32097 /* Frameworks */,
+				DCC19B2D2A04A03E00C32097 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ImproveTube Extension (iOS)";
+			productName = "ImproveTube Extension (iOS)";
+			productReference = DCC19B2F2A04A03E00C32097 /* ImproveTube Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		DCC19B382A04A03E00C32097 /* ImproveTube Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCC19B572A04A03E00C32097 /* Build configuration list for PBXNativeTarget "ImproveTube Extension (macOS)" */;
+			buildPhases = (
+				DCC19B352A04A03E00C32097 /* Sources */,
+				DCC19B362A04A03E00C32097 /* Frameworks */,
+				DCC19B372A04A03E00C32097 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ImproveTube Extension (macOS)";
+			productName = "ImproveTube Extension (macOS)";
+			productReference = DCC19B392A04A03E00C32097 /* ImproveTube Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCC19AFD2A04A03D00C32097 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				ORGANIZATIONNAME = org.nativeit;
+				TargetAttributes = {
+					DCC19B0F2A04A03E00C32097 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					DCC19B212A04A03E00C32097 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					DCC19B2E2A04A03E00C32097 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					DCC19B382A04A03E00C32097 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = DCC19B002A04A03D00C32097 /* Build configuration list for PBXProject "ImproveTube" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCC19AFC2A04A03D00C32097;
+			productRefGroup = DCC19B112A04A03E00C32097 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCC19B0F2A04A03E00C32097 /* ImproveTube (iOS) */,
+				DCC19B212A04A03E00C32097 /* ImproveTube (macOS) */,
+				DCC19B2E2A04A03E00C32097 /* ImproveTube Extension (iOS) */,
+				DCC19B382A04A03E00C32097 /* ImproveTube Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCC19B0E2A04A03E00C32097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC19B422A04A03E00C32097 /* Icon.png in Resources */,
+				DCC19B192A04A03E00C32097 /* LaunchScreen.storyboard in Resources */,
+				DCC19B402A04A03E00C32097 /* Main.html in Resources */,
+				DCC19B462A04A03E00C32097 /* Script.js in Resources */,
+				DCC19B4A2A04A03E00C32097 /* Assets.xcassets in Resources */,
+				DCC19B1C2A04A03E00C32097 /* Main.storyboard in Resources */,
+				DCC19B442A04A03E00C32097 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC19B202A04A03E00C32097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC19B432A04A03E00C32097 /* Icon.png in Resources */,
+				DCC19B452A04A03E00C32097 /* Style.css in Resources */,
+				DCC19B282A04A03E00C32097 /* Main.storyboard in Resources */,
+				DCC19B472A04A03E00C32097 /* Script.js in Resources */,
+				DCC19B4B2A04A03E00C32097 /* Assets.xcassets in Resources */,
+				DCC19B412A04A03E00C32097 /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC19B2D2A04A03E00C32097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC19B7E2A04A03F00C32097 /* js&css in Resources */,
+				DCC19B782A04A03F00C32097 /* background.js in Resources */,
+				DCC19B7C2A04A03F00C32097 /* menu in Resources */,
+				DCC19B762A04A03F00C32097 /* LICENSE in Resources */,
+				DCC19B792A04A03F00C32097 /* manifest3.json in Resources */,
+				DCC19B7D2A04A03F00C32097 /* manifest.json in Resources */,
+				DCC19B7A2A04A03F00C32097 /* stuff in Resources */,
+				DCC19B7B2A04A03F00C32097 /* CONTRIBUTING.md in Resources */,
+				DCC19B772A04A03F00C32097 /* ImproveTube in Resources */,
+				DCC19B7F2A04A03F00C32097 /* _locales in Resources */,
+				DCC19B752A04A03F00C32097 /* py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC19B372A04A03E00C32097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC19B732A04A03F00C32097 /* js&css in Resources */,
+				DCC19B6D2A04A03F00C32097 /* background.js in Resources */,
+				DCC19B712A04A03F00C32097 /* menu in Resources */,
+				DCC19B6B2A04A03F00C32097 /* LICENSE in Resources */,
+				DCC19B6E2A04A03F00C32097 /* manifest3.json in Resources */,
+				DCC19B722A04A03F00C32097 /* manifest.json in Resources */,
+				DCC19B6F2A04A03F00C32097 /* stuff in Resources */,
+				DCC19B702A04A03F00C32097 /* CONTRIBUTING.md in Resources */,
+				DCC19B6C2A04A03F00C32097 /* ImproveTube in Resources */,
+				DCC19B742A04A03F00C32097 /* _locales in Resources */,
+				DCC19B6A2A04A03F00C32097 /* py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCC19B0C2A04A03E00C32097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC19B482A04A03E00C32097 /* ViewController.swift in Sources */,
+				DCC19B142A04A03E00C32097 /* AppDelegate.swift in Sources */,
+				DCC19B162A04A03E00C32097 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC19B1E2A04A03E00C32097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC19B492A04A03E00C32097 /* ViewController.swift in Sources */,
+				DCC19B252A04A03E00C32097 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC19B2B2A04A03E00C32097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC19B4C2A04A03E00C32097 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC19B352A04A03E00C32097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC19B4D2A04A03E00C32097 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCC19B322A04A03E00C32097 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCC19B2E2A04A03E00C32097 /* ImproveTube Extension (iOS) */;
+			targetProxy = DCC19B312A04A03E00C32097 /* PBXContainerItemProxy */;
+		};
+		DCC19B3C2A04A03E00C32097 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCC19B382A04A03E00C32097 /* ImproveTube Extension (macOS) */;
+			targetProxy = DCC19B3B2A04A03E00C32097 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCC19B032A04A03D00C32097 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCC19B042A04A03D00C32097 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		DCC19B172A04A03E00C32097 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCC19B182A04A03E00C32097 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DCC19B1A2A04A03E00C32097 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCC19B1B2A04A03E00C32097 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCC19B262A04A03E00C32097 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCC19B272A04A03E00C32097 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCC19B4E2A04A03E00C32097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCC19B4F2A04A03E00C32097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DCC19B512A04A03E00C32097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4SGGX3RKA4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ImproveTube Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nativeit.ImproveTube;
+				PRODUCT_NAME = "ImproveTube Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCC19B522A04A03E00C32097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4SGGX3RKA4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ImproveTube Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nativeit.ImproveTube;
+				PRODUCT_NAME = "ImproveTube Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCC19B552A04A03E00C32097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4SGGX3RKA4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = ImproveTube;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nativeit.ImproveTube;
+				PRODUCT_NAME = ImproveTube;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCC19B562A04A03E00C32097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4SGGX3RKA4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = ImproveTube;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nativeit.ImproveTube;
+				PRODUCT_NAME = ImproveTube;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCC19B582A04A03E00C32097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/ImproveTube.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4SGGX3RKA4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ImproveTube Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 0.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nativeit.ImproveTube;
+				PRODUCT_NAME = "ImproveTube Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DCC19B592A04A03E00C32097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/ImproveTube.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4SGGX3RKA4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ImproveTube Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 0.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nativeit.ImproveTube;
+				PRODUCT_NAME = "ImproveTube Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DCC19B5C2A04A03E00C32097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/ImproveTube.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4SGGX3RKA4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = ImproveTube;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 0.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nativeit.ImproveTube;
+				PRODUCT_NAME = ImproveTube;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DCC19B5D2A04A03E00C32097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/ImproveTube.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4SGGX3RKA4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = ImproveTube;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 0.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nativeit.ImproveTube;
+				PRODUCT_NAME = ImproveTube;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCC19B002A04A03D00C32097 /* Build configuration list for PBXProject "ImproveTube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC19B4E2A04A03E00C32097 /* Debug */,
+				DCC19B4F2A04A03E00C32097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCC19B502A04A03E00C32097 /* Build configuration list for PBXNativeTarget "ImproveTube Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC19B512A04A03E00C32097 /* Debug */,
+				DCC19B522A04A03E00C32097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCC19B542A04A03E00C32097 /* Build configuration list for PBXNativeTarget "ImproveTube (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC19B552A04A03E00C32097 /* Debug */,
+				DCC19B562A04A03E00C32097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCC19B572A04A03E00C32097 /* Build configuration list for PBXNativeTarget "ImproveTube Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC19B582A04A03E00C32097 /* Debug */,
+				DCC19B592A04A03E00C32097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCC19B5B2A04A03E00C32097 /* Build configuration list for PBXNativeTarget "ImproveTube (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC19B5C2A04A03E00C32097 /* Debug */,
+				DCC19B5D2A04A03E00C32097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCC19AFD2A04A03D00C32097 /* Project object */;
+}
