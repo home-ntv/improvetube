@@ -542,17 +542,17 @@
     "improveLogo": {
         "message": "Ulepsz logo"
     },
-    "improvedtubeButtons": {
-        "message": "Przyciski ImprovedTube"
+    "ImproveTubeButtons": {
+        "message": "Przyciski ImproveTube"
     },
-    "improvedtubeIconOnYoutube": {
-        "message": "Ikona ImprovedTube na YouTube"
+    "ImproveTubeIconOnYoutube": {
+        "message": "Ikona ImproveTube na YouTube"
     },
-    "improvedtubeLanguage": {
-        "message": "Język ImprovedTube"
+    "ImproveTubeLanguage": {
+        "message": "Język ImproveTube"
     },
-    "improvedtubeVersion": {
-        "message": "Wersja ImprovedTube"
+    "ImproveTubeVersion": {
+        "message": "Wersja ImproveTube"
     },
     "increasePlaybackSpeed": {
         "message": "Zwiększ prędkość odtwarzania"

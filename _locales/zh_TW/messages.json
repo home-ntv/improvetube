@@ -542,17 +542,17 @@
     "improveLogo": {
         "message": "改進 YouTube 圖示"
     },
-    "improvedtubeButtons": {
-        "message": "ImprovedTube 按鈕"
+    "ImproveTubeButtons": {
+        "message": "ImproveTube 按鈕"
     },
-    "improvedtubeIconOnYoutube": {
-        "message": "於 YouTube 中顯示 ImprovedTube 圖示"
+    "ImproveTubeIconOnYoutube": {
+        "message": "於 YouTube 中顯示 ImproveTube 圖示"
     },
-    "improvedtubeLanguage": {
-        "message": "ImprovedTube 語言"
+    "ImproveTubeLanguage": {
+        "message": "ImproveTube 語言"
     },
-    "improvedtubeVersion": {
-        "message": "ImprovedTube 版本"
+    "ImproveTubeVersion": {
+        "message": "ImproveTube 版本"
     },
     "increasePlaybackSpeed": {
         "message": "加快播放速度"

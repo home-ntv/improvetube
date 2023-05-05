@@ -6,7 +6,7 @@
 4.6.1 DEFAULT CHANNEL TAB
 ------------------------------------------------------------------------------*/
 
-ImprovedTube.channelDefaultTab = function (a) {
+ImproveTube.channelDefaultTab = function (a) {
 	var option = this.storage.channel_default_tab;
 
 	if (option && option !== '/' && a && a.parentNode && a.parentNode.id !== 'contenteditable-root') {
@@ -24,7 +24,7 @@ ImprovedTube.channelDefaultTab = function (a) {
 4.6.2 PLAY ALL BUTTON
 ------------------------------------------------------------------------------*/
 
-ImprovedTube.channelPlayAllButton = function () {
+ImproveTube.channelPlayAllButton = function () {
 	if (this.storage.channel_play_all_button === true) {
 		if (/\/(channel|user|c)\/[^/]+\/videos/.test(location.href)) {
 			var container = document.querySelector('ytd-channel-sub-menu-renderer #primary-items');

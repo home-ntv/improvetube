@@ -11,8 +11,8 @@ extension.skeleton.main.layers.section.general = {
 			section_1: {
 				component: 'section',
 				variant: 'card',
-				improvedtube_youtube_icon: {
-					text: 'improvedtubeIconOnYoutube',
+				ImproveTube_youtube_icon: {
+					text: 'ImproveTubeIconOnYoutube',
 					component: 'select',
 					options: [{
 						text: 'disabled',

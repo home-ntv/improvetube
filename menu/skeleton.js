@@ -161,7 +161,7 @@ extension.skeleton.main = {
 			open: function () {
 				var skeleton = satus.last(this.path),
 					section = this.baseProvider.skeleton.header.sectionStart,
-					title = 'ImprovedTube';
+					title = 'ImproveTube';
 
 				if (skeleton.parentSkeleton) {
 					if (skeleton.parentSkeleton.label) {
@@ -185,7 +185,7 @@ extension.skeleton.main = {
 		section: {
 			component: 'section',
 			variant: function () {
-				if (satus.storage.get('improvedtube_home') === 'list') {
+				if (satus.storage.get('ImproveTube_home') === 'list') {
 					return 'card';
 				}
 

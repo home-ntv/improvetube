@@ -13,7 +13,7 @@
 extension.attributes = function () {
 	var attributes = {
 		theme: true,
-		improvedtube_home: true,
+		ImproveTube_home: true,
 		title_version: true,
 		it_general: true,
 		it_appearance: true,
@@ -30,7 +30,7 @@ extension.attributes = function () {
 	for (var attribute in attributes) {
 		var value = satus.storage.get(attribute);
 
-		if (attribute === 'improvedtube_home') {
+		if (attribute === 'ImproveTube_home') {
 			attribute = 'home-style';
 		}
 
@@ -77,7 +77,7 @@ extension.exportSettings = function () {
 									if (granted) {
 										chrome.downloads.download({
 											url: URL.createObjectURL(blob),
-											filename: 'improvedtube.json',
+											filename: 'ImproveTube.json',
 											saveAs: true
 										}, function () {
 											setTimeout(function () {

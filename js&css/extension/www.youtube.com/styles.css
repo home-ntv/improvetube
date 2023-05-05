@@ -16,7 +16,7 @@
   6.2 Featured content
 7.0 Shortcuts
 8.0 Settings
-  8.1 ImprovedTube icon on YouTube
+  8.1 ImproveTube icon on YouTube
 9.0 Blacklist
 3.0 Themes
   3.1 Bluelight
@@ -93,11 +93,11 @@ display: none !important;}
 /*-----------------------------------------------------------------------------
 # DRAGGING
 -----------------------------------------------------------------------------*/
-.improvedtube-mini-player.dragging {
+.ImproveTube-mini-player.dragging {
 	pointer-events: none !important;
 }
 
-.improvedtube-mini-player.dragging *:not(.html5-video-container):not(video) {
+.ImproveTube-mini-player.dragging *:not(.html5-video-container):not(video) {
 	visibility: hidden !important;
 }
 
@@ -286,7 +286,7 @@ html[it-channel-hide-featured-content=true] #secondary ytd-browse-secondary-cont
 ------------------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------------------
-8.1 IMPROVEDTUBE ICON ON YOUTUBE
+8.1 ImproveTube ICON ON YOUTUBE
 ------------------------------------------------------------------------------*/
 .it-button {
 	position: relative;
@@ -492,7 +492,7 @@ ytd-guide-section-renderer .it-button::after {
 
 /*------------NEW---------------*/
 
-.improvedtube-sidebar-a {
+.ImproveTube-sidebar-a {
 	font-size: 1.4rem;
 	line-height: var(--yt-guide-highlight-line-height, 1.8rem);
 	position: relative;
@@ -507,11 +507,11 @@ ytd-guide-section-renderer .it-button::after {
 	align-items: center;
 }
 
-.improvedtube-sidebar-a:hover {
+.ImproveTube-sidebar-a:hover {
 	background-color: var(--yt-spec-10-percent-layer);
 }
 
-.improvedtube-sidebar-a::before {
+.ImproveTube-sidebar-a::before {
 	width: 20px;
 	height: 20px;
 	margin: 2px 26px 2px 2px;
@@ -520,7 +520,7 @@ ytd-guide-section-renderer .it-button::after {
 	background: #f00;
 }
 
-.improvedtube-sidebar-a::after {
+.ImproveTube-sidebar-a::after {
 	position: absolute;
 	left: 33px;
 	display: block;
@@ -531,7 +531,7 @@ ytd-guide-section-renderer .it-button::after {
 	border-left: 8px solid rgb(255, 255, 255);
 }
 
-.improvedtube-player-button {
+.ImproveTube-player-button {
 	position: relative;
 	width: 40px;
 	height: 36px;
@@ -544,11 +544,11 @@ ytd-guide-section-renderer .it-button::after {
 	fill: var(--yt-spec-icon-inactive);
 }
 
-.improvedtube-player-button:last-of-type {
+.ImproveTube-player-button:last-of-type {
 	margin-right: 24px;
 }
 
-.improvedtube-player-button:hover::after {
+.ImproveTube-player-button:hover::after {
 	position: absolute;
 	top: 150%;
 	left: 50%;

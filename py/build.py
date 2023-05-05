@@ -62,7 +62,7 @@ def chromium(browser):
 		version = data['version']
 
 		if (browser == 'beta'):
-			data['name'] = 'ImprovedTube (testing)';
+			data['name'] = 'ImproveTube (testing)';
 
 		json_file.seek(0)
 		json.dump(data, json_file, indent=4, sort_keys=True)

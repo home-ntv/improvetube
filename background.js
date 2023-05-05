@@ -99,7 +99,7 @@ function updateContextMenu(language) {
 
 		chrome.contextMenus.onClicked.addListener(function (info) {
 			var links = [
-				'https://www.improvedtube.com/donate',
+				'https://www.ImproveTube.com/donate',
 				'https://chrome.google.com/webstore/detail/improve-youtube-video-you/bnomihfieiccainjcjblhegjgglakjdd',
 				'https://github.com/code4charity/YouTube-Extension'
 			];
@@ -266,4 +266,4 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
 # UNINSTALL URL
 --------------------------------------------------------------*/
 
-chrome.runtime.setUninstallURL('https://improvedtube.com/uninstalled');
+chrome.runtime.setUninstallURL('https://ImproveTube.com/uninstalled');

@@ -104,7 +104,7 @@ extension.skeleton.header.sectionEnd.menu.on.click.settings.on.click.firstSectio
 				layout: {
 					component: 'select',
 					text: 'layout',
-					storage: 'improvedtube_home',
+					storage: 'ImproveTube_home',
 					options: [{
 						text: 'bubbles',
 						value: 'bubbles'
@@ -474,9 +474,9 @@ extension.skeleton.header.sectionEnd.menu.on.click.settings.on.click.secondSecti
 					}
 				],
 
-				improvedtube: {
+				ImproveTube: {
 					component: 'select',
-					text: 'ImprovedTube',
+					text: 'ImproveTube',
 					storage: 'language',
 					options: function () {
 						return extension.skeleton.header.sectionEnd.menu.on.click.settings.on.click.secondSection.language.on.click.section.languages;

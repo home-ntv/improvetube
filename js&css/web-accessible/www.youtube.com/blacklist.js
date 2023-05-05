@@ -2,7 +2,7 @@
 4.8.0 BLACKLIST
 ------------------------------------------------------------------------------*/
 
-ImprovedTube.blacklist = function (type, node) {
+ImproveTube.blacklist = function (type, node) {
 	if (this.storage.blacklist_activate !== true) {
 		for (var i = 0, l = this.elements.blacklist_buttons.length; i < l; i++) {
 			this.elements.blacklist_buttons[i].remove();
@@ -46,13 +46,13 @@ ImprovedTube.blacklist = function (type, node) {
 		var button = document.createElement('button'),
 			svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg'),
 			path = document.createElementNS('http://www.w3.org/2000/svg', 'path'),
-			id = node.href.match(ImprovedTube.regex.video_id);
+			id = node.href.match(ImproveTube.regex.video_id);
 
 		button.className = 'it-add-to-blacklist';
 		button.addEventListener('click', function (event) {
 			if (this.parentNode.href) {
 				var data = this.parentNode.parentNode.__data,
-					id = this.parentNode.href.match(ImprovedTube.regex.video_id),
+					id = this.parentNode.href.match(ImproveTube.regex.video_id),
 					title = '';
 
 				if (
@@ -73,14 +73,14 @@ ImprovedTube.blacklist = function (type, node) {
 				}
 
 				if (id && id[1]) {
-					ImprovedTube.messages.send({
+					ImproveTube.messages.send({
 						action: 'blacklist',
 						type: 'video',
 						id: id[1],
 						title
 					});
 
-					ImprovedTube.storage.blacklist.videos[id[1]] = {
+					ImproveTube.storage.blacklist.videos[id[1]] = {
 						title: title
 					};
 
@@ -102,7 +102,7 @@ ImprovedTube.blacklist = function (type, node) {
 
 		this.elements.blacklist_buttons.push(button);
 
-		if (id && id[1] && ImprovedTube.storage.blacklist.videos[id[1]]) {
+		if (id && id[1] && ImproveTube.storage.blacklist.videos[id[1]]) {
 			node.parentNode.__dataHost.classList.add('it-blacklisted-video');
 		}
 	} else if (type === 'channel') {
@@ -141,14 +141,14 @@ ImprovedTube.blacklist = function (type, node) {
 
 				this.added = !this.added;
 
-				ImprovedTube.messages.send({
+				ImproveTube.messages.send({
 					type: 'channel',
 					id,
 					title: data.title,
 					prevent: data.avatar.thumbnails[0].url
 				});
 
-				ImprovedTube.storage.blacklist.channels[id] = {
+				ImproveTube.storage.blacklist.channels[id] = {
 					title: data.title,
 					prevent: data.avatar.thumbnails[0].url
 				};

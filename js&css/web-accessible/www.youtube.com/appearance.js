@@ -7,7 +7,7 @@
 /*------------------------------------------------------------------------------
  PLAYER SIZE
 ------------------------------------------------------------------------------*/
-ImprovedTube.playerSize = function () {
+ImproveTube.playerSize = function () {
 	if (this.storage.player_size === "custom") {    
         var width = Number(this.storage.custom_player_size_width) || 1280,
             height = Number(this.storage.custom_player_size_height) || 720,
@@ -25,11 +25,11 @@ ImprovedTube.playerSize = function () {
 /*------------------------------------------------------------------------------
  FORCED THEATER MODE
 ------------------------------------------------------------------------------*/
-ImprovedTube.forcedTheaterMode = function () {
-    if (ImprovedTube.storage.forced_theater_mode === true && ImprovedTube.elements.ytd_watch && ImprovedTube.elements.player) {
-        var button = ImprovedTube.elements.player.querySelector("button.ytp-size-button");
+ImproveTube.forcedTheaterMode = function () {
+    if (ImproveTube.storage.forced_theater_mode === true && ImproveTube.elements.ytd_watch && ImproveTube.elements.player) {
+        var button = ImproveTube.elements.player.querySelector("button.ytp-size-button");
 
-        if (button && ImprovedTube.elements.ytd_watch.theater === false) {
+        if (button && ImproveTube.elements.ytd_watch.theater === false) {
             document.cookie = "wide=1;domain=.youtube.com";
 
             setTimeout(function () {
@@ -41,9 +41,9 @@ ImprovedTube.forcedTheaterMode = function () {
 /*------------------------------------------------------------------------------
  HD THUMBNAIL
 ------------------------------------------------------------------------------*/
-ImprovedTube.playerHdThumbnail = function () {
+ImproveTube.playerHdThumbnail = function () {
     if (this.storage.player_hd_thumbnail === true) {
-        var thumbnail = ImprovedTube.elements.player_thumbnail;
+        var thumbnail = ImproveTube.elements.player_thumbnail;
 
         if (thumbnail.style.backgroundImage.indexOf("/hqdefault.jpg") !== -1) {
             thumbnail.style.backgroundImage = thumbnail.style.backgroundImage.replace("/hqdefault.jpg", "/maxresdefault.jpg");
@@ -53,9 +53,9 @@ ImprovedTube.playerHdThumbnail = function () {
 /*------------------------------------------------------------------------------
  ALWAYS SHOW PROGRESS BAR
 ------------------------------------------------------------------------------*/
-ImprovedTube.alwaysShowProgressBar = function () {
+ImproveTube.alwaysShowProgressBar = function () {
     if (this.storage.always_show_progress_bar === true) {
-        var player = ImprovedTube.elements.player;
+        var player = ImproveTube.elements.player;
 
         if (player && player.className.indexOf("ytp-autohide") !== -1) {
             var played = (player.getCurrentTime() * 100) / player.getDuration(),
@@ -102,7 +102,7 @@ ImprovedTube.alwaysShowProgressBar = function () {
 /*------------------------------------------------------------------------------
  VIDEO REMAINING DURATION
 ------------------------------------------------------------------------------*/
-ImprovedTube.formatSecond = function (rTime) {
+ImproveTube.formatSecond = function (rTime) {
     var time = new Date(null);
     if (this.storage.duration_with_speed === true) {
         var playbackRate = this.elements.video.playbackRate;
@@ -118,11 +118,11 @@ ImprovedTube.formatSecond = function (rTime) {
     }
 };
 
-ImprovedTube.playerRemainingDuration = function () {
+ImproveTube.playerRemainingDuration = function () {
     var element = document.querySelector(".ytp-time-remaining-duration");
     if (this.storage.player_remaining_duration === true) {
-        var player = ImprovedTube.elements.player;
-        var rTime = ImprovedTube.formatSecond((player.getDuration() - player.getCurrentTime()).toFixed(0));
+        var player = ImproveTube.elements.player;
+        var rTime = ImproveTube.formatSecond((player.getDuration() - player.getCurrentTime()).toFixed(0));
         if (!element) {
             var label = document.createElement("span");
             label.textContent = " (-" + rTime + ")";
@@ -138,7 +138,7 @@ ImprovedTube.playerRemainingDuration = function () {
 /*------------------------------------------------------------------------------
  Comments Sidebar
 ------------------------------------------------------------------------------*/
-ImprovedTube.commentsSidebar = function() { if(ImprovedTube.storage.comments_sidebar === true){ 
+ImproveTube.commentsSidebar = function() { if(ImproveTube.storage.comments_sidebar === true){ 
   if(window.matchMedia("(min-width: 1599px)").matches) {
   document.querySelector("#primary").insertAdjacentElement('afterend', document.querySelector("#comments"));}
   if(window.matchMedia("(max-width: 1598px)").matches) {	  
@@ -154,13 +154,13 @@ ImprovedTube.commentsSidebar = function() { if(ImprovedTube.storage.comments_sid
 /*----------------------------------------------------------------
  TRANSCRIPT
 --------------------------------------------------------------*/
-ImprovedTube.transcript = function (el){ if (ImprovedTube.storage.transcript === true){
+ImproveTube.transcript = function (el){ if (ImproveTube.storage.transcript === true){
 try{el.querySelector('*[target-id*=transcript]').removeAttribute('visibility');}
 catch{}}}
 /*----------------------------------------------------------------
  CHAPTERS
 --------------------------------------------------------------*/
-ImprovedTube.chapters = function (el){ if (ImprovedTube.storage.chapters === true){
+ImproveTube.chapters = function (el){ if (ImproveTube.storage.chapters === true){
 try{el.querySelector('*[target-id*=chapters]').removeAttribute('visibility');} 
 catch{}}
 }
@@ -168,15 +168,15 @@ catch{}}
  LIVECHAT
 ------------------------------------------------------------------------------*/
 let isCollapsed = false
-ImprovedTube.livechat = function () {
+ImproveTube.livechat = function () {
     if (this.storage.livechat === "collapsed") {
-        if(ImprovedTube.elements.livechat && !isCollapsed){
-            ImprovedTube.elements.livechat.button.click();
+        if(ImproveTube.elements.livechat && !isCollapsed){
+            ImproveTube.elements.livechat.button.click();
             isCollapsed = true 
         }
     }else{
         if(isCollapsed){
-            ImprovedTube.elements.livechat.button.click();
+            ImproveTube.elements.livechat.button.click();
             isCollapsed = false
         }
     }
@@ -187,7 +187,7 @@ ImprovedTube.livechat = function () {
 /*------------------------------------------------------------------------------
   PLAYER BUTTONS
 ------------------------------------------------------------------------------*/
-ImprovedTube.improvedtubeYoutubeButtonsUnderPlayer = function () {
+ImproveTube.ImproveTubeYoutubeButtonsUnderPlayer = function () {
 	if (window.self !== window.top) {
 		return false;
 	}
@@ -198,7 +198,7 @@ ImprovedTube.improvedtubeYoutubeButtonsUnderPlayer = function () {
 		||  this.storage.description == "classic_expanded" || this.storage.description == "classic_hidden"  )
 	   {var section = document.querySelector('#flex.ytd-video-primary-info-renderer');}
 
-	if (section && !document.querySelector('.improvedtube-player-button')) {
+	if (section && !document.querySelector('.ImproveTube-player-button')) {
 
 
 		if (this.storage.below_player_loop !== false) {
@@ -206,7 +206,7 @@ ImprovedTube.improvedtubeYoutubeButtonsUnderPlayer = function () {
 				svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg'),
 				path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
 
-			button.className = 'improvedtube-player-button';
+			button.className = 'ImproveTube-player-button';
 			button.dataset.tooltip = 'Loop';
 
 			svg.style.opacity = '.5';
@@ -215,14 +215,14 @@ ImprovedTube.improvedtubeYoutubeButtonsUnderPlayer = function () {
 			path.setAttributeNS(null, 'd', 'M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4zm-4-2V9h-1l-2 1v1h1.5v4H13z');
 
 			button.onclick = function () {
-				var video = ImprovedTube.elements.video,
+				var video = ImproveTube.elements.video,
 					svg = this.children[0];
 
 				if (video.hasAttribute('loop')) {
 					video.removeAttribute('loop');
 
 					svg.style.opacity = '.5';
-				} else if (!/ad-showing/.test(ImprovedTube.elements.player.className)) {
+				} else if (!/ad-showing/.test(ImproveTube.elements.player.className)) {
 					video.setAttribute('loop', '');
 
 					svg.style.opacity = '1';
@@ -239,7 +239,7 @@ ImprovedTube.improvedtubeYoutubeButtonsUnderPlayer = function () {
 				svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg'),
 				path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
 
-			button.className = 'improvedtube-player-button';
+			button.className = 'ImproveTube-player-button';
 			button.dataset.tooltip = 'PiP';
 			svg.style.opacity = '.64';
 			svg.setAttributeNS(null, 'viewBox', '0 0 24 24');
@@ -264,12 +264,12 @@ ImprovedTube.improvedtubeYoutubeButtonsUnderPlayer = function () {
 				svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg'),
 				path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
 
-			button.className = 'improvedtube-player-button';
+			button.className = 'ImproveTube-player-button';
 			button.dataset.tooltip = 'Screenshot';
 			svg.style.opacity = '.55';
 			svg.setAttributeNS(null, 'viewBox', '0 0 24 24');
 			path.setAttributeNS(null, 'd', 'M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z');
-			button.onclick = ImprovedTube.screenshot;
+			button.onclick = ImproveTube.screenshot;
 
 			svg.appendChild(path);
 			button.appendChild(svg);
@@ -282,14 +282,14 @@ ImprovedTube.improvedtubeYoutubeButtonsUnderPlayer = function () {
 /*------------------------------------------------------------------------------
  EXPAND DESCRIPTION
 ------------------------------------------------------------------------------*/
-ImprovedTube.expandDescription = function (el) {
+ImproveTube.expandDescription = function (el) {
     if (this.storage.description === "expanded" || this.storage.description === "classic_expanded" ) 
 	   if(el)try{el.click()}catch{setTimeout(function(){el.click();},1000);}
     };	
 /*------------------------------------------------------------------------------
  HIDE DETAIL BUTTON
 ------------------------------------------------------------------------------*/
-ImprovedTube.hideDetailButton = function (el) {
+ImproveTube.hideDetailButton = function (el) {
     if (el.length === 4) {
         el[3].setAttribute("id", "Save-button");
         el[2].setAttribute("id", "Clip-button");
@@ -303,7 +303,7 @@ ImprovedTube.hideDetailButton = function (el) {
 /*--------------------------------------------------------------
  DAY OF WEEK
 --------------------------------------------------------------*/
-ImprovedTube.dayOfWeek = function () {
+ImproveTube.dayOfWeek = function () {
     var element = document.querySelector(".ytd-day-of-week");
     if (this.storage.day_of_week === true) {
         var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -326,10 +326,10 @@ ImprovedTube.dayOfWeek = function () {
 /*------------------------------------------------------------------------------
  HOW LONG AGO THE VIDEO WAS UPLOADED
 ------------------------------------------------------------------------------*/
-ImprovedTube.howLongAgoTheVideoWasUploaded = function () {
+ImproveTube.howLongAgoTheVideoWasUploaded = function () {
     if (this.storage.how_long_ago_the_video_was_uploaded === true && this.elements.yt_channel_name) {
         var xhr = new XMLHttpRequest(),
-            key = this.storage["google-api-key"] || ImprovedTube.defaultApiKey,
+            key = this.storage["google-api-key"] || ImproveTube.defaultApiKey,
             id = this.getParam(location.href.slice(location.href.indexOf("?") + 1), "v");
 
         function timeSince(date) {
@@ -361,9 +361,9 @@ ImprovedTube.howLongAgoTheVideoWasUploaded = function () {
 
         xhr.addEventListener("load", function () {
             var response = JSON.parse(this.responseText),
-                element = ImprovedTube.elements.how_long_ago_the_video_was_uploaded || document.createElement("div");
+                element = ImproveTube.elements.how_long_ago_the_video_was_uploaded || document.createElement("div");
 
-            ImprovedTube.empty(element);
+            ImproveTube.empty(element);
 
             if (response.error) {
                 element.appendChild(document.createTextNode("• Error: " + response.error.code));
@@ -373,7 +373,7 @@ ImprovedTube.howLongAgoTheVideoWasUploaded = function () {
 
             element.className = "it-how-long-ago-the-video-was-uploaded";
 
-            ImprovedTube.elements.how_long_ago_the_video_was_uploaded = element;
+            ImproveTube.elements.how_long_ago_the_video_was_uploaded = element;
 
             document.querySelector("#info #info-text").appendChild(element);
         });
@@ -385,9 +385,9 @@ ImprovedTube.howLongAgoTheVideoWasUploaded = function () {
 /*------------------------------------------------------------------------------
  SHOW CHANNEL VIDEOS COUNT
 ------------------------------------------------------------------------------*/
-ImprovedTube.channelVideosCount = function () {
+ImproveTube.channelVideosCount = function () {
     if (this.storage.channel_videos_count === true && this.elements.yt_channel_link) {
-        var key = this.storage["google-api-key"] || ImprovedTube.defaultApiKey;
+        var key = this.storage["google-api-key"] || ImproveTube.defaultApiKey;
         if (this.elements.yt_channel_link.href.indexOf("/channel/") == -1) {
             var xhr = new XMLHttpRequest(),
                 id = this.getParam(location.href.slice(location.href.indexOf("?") + 1), "v");
@@ -409,9 +409,9 @@ ImprovedTube.channelVideosCount = function () {
         xhr.addEventListener("load", function () {
             var response = JSON.parse(this.responseText),
                 parent = document.querySelector("#meta ytd-channel-name + yt-formatted-string"),
-                element = ImprovedTube.elements.channel_videos_count || document.createElement("div");
+                element = ImproveTube.elements.channel_videos_count || document.createElement("div");
 
-            ImprovedTube.empty(element);
+            ImproveTube.empty(element);
 
             if (response.error) {
                 element.appendChild(document.createTextNode("• Error: " + response.error.code));
@@ -421,11 +421,11 @@ ImprovedTube.channelVideosCount = function () {
 
             element.className = "it-channel-videos-count";
 
-            ImprovedTube.elements.channel_videos_count = element;
+            ImproveTube.elements.channel_videos_count = element;
 
             parent.appendChild(element);
 
-            ImprovedTube.elements.channel_videos_count = element;
+            ImproveTube.elements.channel_videos_count = element;
         });
 
         xhr.open("GET", "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=" + id + "&key=" + key, true);

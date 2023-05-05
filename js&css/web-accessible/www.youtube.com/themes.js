@@ -6,7 +6,7 @@
 4.3.1 MY COLORS
 ------------------------------------------------------------------------------*/
 
-ImprovedTube.myColors = function () {
+ImproveTube.myColors = function () {
 	if (
 		this.storage.theme === 'custom' &&
 		Array.isArray(this.storage.theme_primary_color) &&
@@ -89,7 +89,7 @@ ImprovedTube.myColors = function () {
 		this.elements.my_colors.remove();}  	
 };		
 
-ImprovedTube.setTheme = function () {
+ImproveTube.setTheme = function () {
 	    	if (this.storage.theme === 'default'){
 			if (document.documentElement.hasAttribute('it-themes') !== null && document.documentElement.hasAttribute('it-themes') === true){													 
 				document.documentElement.removeAttribute('it-themes');			
@@ -128,6 +128,6 @@ ImprovedTube.setTheme = function () {
 	} else {
 		cookieValue = pref + "&f6=" + cookieValue;
 	}
-	ImprovedTube.setCookie('PREF', cookieValue);
+	ImproveTube.setCookie('PREF', cookieValue);
 	}
 };				

@@ -3,15 +3,15 @@
 ------------------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------------------
-4.10.1 IMPROVEDTUBE ICON
+4.10.1 ImproveTube ICON
 ------------------------------------------------------------------------------*/
 
-ImprovedTube.improvedtubeYoutubeIcon = function () {
-	var data = localStorage.getItem('improvedtube-button-position'),
+ImproveTube.ImproveTubeYoutubeIcon = function () {
+	var data = localStorage.getItem('ImproveTube-button-position'),
 		x = 0,
 		y = 0,
-		option = this.storage.improvedtube_youtube_icon,
-		button = this.elements.improvedtube_button;
+		option = this.storage.ImproveTube_youtube_icon,
+		button = this.elements.ImproveTube_button;
 
 	if (data) {
 		data = JSON.parse(data);
@@ -28,7 +28,7 @@ ImprovedTube.improvedtubeYoutubeIcon = function () {
 		button.className = 'it-button';
 
 		button.addEventListener('mousedown', function (event) {
-			if (ImprovedTube.storage.improvedtube_youtube_icon === 'draggable') {
+			if (ImproveTube.storage.ImproveTube_youtube_icon === 'draggable') {
 				var x2 = event.layerX,
 					y2 = event.layerY;
 
@@ -45,7 +45,7 @@ ImprovedTube.improvedtubeYoutubeIcon = function () {
 				}
 
 				function mouseup() {
-					localStorage.setItem('improvedtube-button-position', JSON.stringify({
+					localStorage.setItem('ImproveTube-button-position', JSON.stringify({
 						x,
 						y
 					}));
@@ -98,17 +98,17 @@ ImprovedTube.improvedtubeYoutubeIcon = function () {
 				document.body.appendChild(scrim);
 				document.body.appendChild(iframe);
 
-				ImprovedTube.messages.send({
+				ImproveTube.messages.send({
 					requestOptionsUrl: true
 				});
 			}
 		});
 
-		label.textContent = 'ImprovedTube';
+		label.textContent = 'ImproveTube';
 
 		button.appendChild(label);
 
-		this.elements.improvedtube_button = button;
+		this.elements.ImproveTube_button = button;
 	}
 
 	button.className = 'it-button';
@@ -156,7 +156,7 @@ ImprovedTube.improvedtubeYoutubeIcon = function () {
 4.10.3 DELETE YOUTUBE COOKIES
 -----------------------------------------------------------------------------*/
 
-ImprovedTube.deleteYoutubeCookies = function () {
+ImproveTube.deleteYoutubeCookies = function () {
 	var cookies = document.cookie.split(';');
 
 	for (var i = 0, l = cookies.length; i < l; i++) {
@@ -177,7 +177,7 @@ ImprovedTube.deleteYoutubeCookies = function () {
 4.10.4 YOUTUBE LANGUAGE
 -----------------------------------------------------------------------------*/
 
-ImprovedTube.youtubeLanguage = function () {
+ImproveTube.youtubeLanguage = function () {
 	var value = this.storage.youtube_language;
 
 	if (this.isset(value)) {

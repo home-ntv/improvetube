@@ -542,17 +542,17 @@
     "improveLogo": {
         "message": "Logo đã sửa"
     },
-    "improvedtubeButtons": {
-        "message": "Nút ImprovedTube"
+    "ImproveTubeButtons": {
+        "message": "Nút ImproveTube"
     },
-    "improvedtubeIconOnYoutube": {
-        "message": "Biểu tượng ImprovedTube trên YouTube"
+    "ImproveTubeIconOnYoutube": {
+        "message": "Biểu tượng ImproveTube trên YouTube"
     },
-    "improvedtubeLanguage": {
-        "message": "Ngôn ngữ của ImprovedTube"
+    "ImproveTubeLanguage": {
+        "message": "Ngôn ngữ của ImproveTube"
     },
-    "improvedtubeVersion": {
-        "message": "Phiên bản ImprovedTube"
+    "ImproveTubeVersion": {
+        "message": "Phiên bản ImproveTube"
     },
     "increasePlaybackSpeed": {
         "message": "Tăng tốc độ phát"

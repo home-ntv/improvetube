@@ -542,17 +542,17 @@
     "improveLogo": {
         "message": "ロゴを改善する"
     },
-    "improvedtubeButtons": {
-        "message": "ImprovedTube buttons"
+    "ImproveTubeButtons": {
+        "message": "ImproveTube buttons"
     },
-    "improvedtubeIconOnYoutube": {
-        "message": "ImprovedTube アイコンを YouTube に表示する"
+    "ImproveTubeIconOnYoutube": {
+        "message": "ImproveTube アイコンを YouTube に表示する"
     },
-    "improvedtubeLanguage": {
-        "message": "ImprovedTube の言語"
+    "ImproveTubeLanguage": {
+        "message": "ImproveTube の言語"
     },
-    "improvedtubeVersion": {
-        "message": "ImprovedTube のバージョン"
+    "ImproveTubeVersion": {
+        "message": "ImproveTube のバージョン"
     },
     "increasePlaybackSpeed": {
         "message": "再生速度を上げる"

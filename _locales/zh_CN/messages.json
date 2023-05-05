@@ -542,17 +542,17 @@
     "improveLogo": {
         "message": "优化图标"
     },
-    "improvedtubeButtons": {
-        "message": "ImprovedTube buttons"
+    "ImproveTubeButtons": {
+        "message": "ImproveTube buttons"
     },
-    "improvedtubeIconOnYoutube": {
-        "message": "在 YouTube 显示 ImprovedTube 图标"
+    "ImproveTubeIconOnYoutube": {
+        "message": "在 YouTube 显示 ImproveTube 图标"
     },
-    "improvedtubeLanguage": {
-        "message": "ImprovedTube 语言"
+    "ImproveTubeLanguage": {
+        "message": "ImproveTube 语言"
     },
-    "improvedtubeVersion": {
-        "message": "ImprovedTube 版本"
+    "ImproveTubeVersion": {
+        "message": "ImproveTube 版本"
     },
     "increasePlaybackSpeed": {
         "message": "视频加速"
@@ -876,7 +876,7 @@
         "message": "寻找上一章"
     },
     "settings": {
-        "message": "ImprovedTube 设置"
+        "message": "ImproveTube 设置"
     },
     "settingsSuccessfullyImported": {
         "message": "设置导入成功"

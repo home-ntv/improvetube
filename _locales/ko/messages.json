@@ -545,17 +545,17 @@
     "improveLogo": {
         "message": "향상된 로고"
     },
-    "improvedtubeButtons": {
-        "message": "ImprovedTube 버튼"
+    "ImproveTubeButtons": {
+        "message": "ImproveTube 버튼"
     },
-    "improvedtubeIconOnYoutube": {
-        "message": "ImprovedTube 아이콘"
+    "ImproveTubeIconOnYoutube": {
+        "message": "ImproveTube 아이콘"
     },
-    "improvedtubeLanguage": {
-        "message": "ImprovedTube 언어"
+    "ImproveTubeLanguage": {
+        "message": "ImproveTube 언어"
     },
-    "improvedtubeVersion": {
-        "message": "ImprovedTube 버전"
+    "ImproveTubeVersion": {
+        "message": "ImproveTube 버전"
     },
     "increasePlaybackSpeed": {
         "message": "재생 속도 느리게"

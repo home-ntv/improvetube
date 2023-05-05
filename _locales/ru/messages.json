@@ -12,7 +12,7 @@
         "message": "⇧"
     },
     "about": {
-        "message": "Об ImprovedTube"
+        "message": "Об ImproveTube"
     },
     "accept": {
         "message": "Принять"
@@ -545,17 +545,17 @@
     "improveLogo": {
         "message": "Улучшить логотип YouTube"
     },
-    "improvedtubeButtons": {
-        "message": "Кнопки расширения ImprovedTube"
+    "ImproveTubeButtons": {
+        "message": "Кнопки расширения ImproveTube"
     },
-    "improvedtubeIconOnYoutube": {
-        "message": "Значок ImprovedTube в YouTube"
+    "ImproveTubeIconOnYoutube": {
+        "message": "Значок ImproveTube в YouTube"
     },
-    "improvedtubeLanguage": {
-        "message": "Язык ImprovedTube"
+    "ImproveTubeLanguage": {
+        "message": "Язык ImproveTube"
     },
-    "improvedtubeVersion": {
-        "message": "Версия ImprovedTube"
+    "ImproveTubeVersion": {
+        "message": "Версия ImproveTube"
     },
     "increasePlaybackSpeed": {
         "message": "Увеличить скорость видео"

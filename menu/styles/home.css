@@ -18,7 +18,7 @@
 	padding: 8px 0;
 }
 
-.satus-base:not([improvedtube-home='list'])[page] .satus-section--home .satus-button {
+.satus-base:not([ImproveTube-home='list'])[page] .satus-section--home .satus-button {
 	width: 96px;
 }
 

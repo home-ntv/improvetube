@@ -55,8 +55,8 @@ html[it-header-position=static] ytd-page-manager#page-manager {
 	margin-top: 0;
 }
 
-html[it-header-position=hover]:not([it-improvedtube-search=true]) #masthead-container,
-html[it-header-position=hover_on_video_page][data-page-type='video']:not([it-improvedtube-search=true]) #masthead-container {
+html[it-header-position=hover]:not([it-ImproveTube-search=true]) #masthead-container,
+html[it-header-position=hover_on_video_page][data-page-type='video']:not([it-ImproveTube-search=true]) #masthead-container {
 
 	transition: all 320ms ease-in-out;
 	transform: translateY(-38%);
